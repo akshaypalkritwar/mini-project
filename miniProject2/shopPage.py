@@ -9,7 +9,7 @@ mydb = mysql.connector.connect(host="localhost", user="root", password="", datab
 root1 = Tk()
 en1 = StringVar()
 en2 = StringVar()
-en3 = StringVar()
+en3 = intVar()
 
 
 class ShopP:
@@ -39,7 +39,7 @@ class ShopP:
         self.frame3 = Frame(master, bg="#9933ff", width=800, height=470)
         self.button5 = Button(self.frame3, text="Update", command=self.update)
         self.button5.place(x=270, y=0)
-        self.entry1 = Entry(self.frame3, textvariable=en1, width=3, font="0 14")
+        self.entry1 = Entry(self.frame3, textclass=en1, width=3, font="0 14")
         self.entry1.place(x=320, y=0)
         self.entry2 = Entry(self.frame3, textvariable=en2, width=10, font="0 14")
         self.entry2.place(x=370, y=0)
