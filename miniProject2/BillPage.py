@@ -3,6 +3,8 @@ from tkinter import messagebox
 import os
 from tkinter import Tk
 import mysql.connector
+print(hactoer2022)
+
 
 mydb2 = mysql.connector.connect(host="localhost", user="root", password="", database="Shop")
 
@@ -17,9 +19,9 @@ Entry2 = StringVar()
 class ShopP:
     def __init__(self, master):
         master.geometry("1920x1080")
-        self.frame = Frame(master, width=1920, height=1080, bg="#a64dff")
+        self.frame = Frame(master, width=1920, height=1080, bg="#F0F8FF")
 
-        self.canvas = Canvas(self.frame, width=200, height=159, bg="#a64dff")
+        self.canvas = Canvas(self.frame, width=200, height=159, bg="#F0F8FF")
         self.canvas.place(x=0, y=0)
         self.photo1 = PhotoImage(file="buy.png")
         self.canvas.create_image(0, 0, image=self.photo1, anchor=NW)
